@@ -93,7 +93,6 @@ describe('Registration Form', () => {
 
     // Button should now be enabled
     cy.get('#submitBtn').should('be.enabled');
-    cy.screenshot('success-state');
 
     cy.get('#submitBtn').click();
 
@@ -124,8 +123,6 @@ describe('Registration Form', () => {
     // Password strength UI should be reset
     cy.get('#passwordStrengthBar').should('have.class', 'password-strength-bar');
     cy.get('#passwordStrengthText').should('have.text', '');
-
-    cy.screenshot('success-state');
   });
 
   it('validates cascading dropdowns and password strength + mismatch', () => {
@@ -172,7 +169,7 @@ describe('Registration Form', () => {
     cy.get('#terms').check({ force: true });
 
     cy.get('#submitBtn').should('be.enabled');
-    cy.screenshot('success-state');
+    cy.screenshot('form-logic-validation');
   });
 
   it('shows phone error when country code does not match selected country', () => {
@@ -186,7 +183,7 @@ describe('Registration Form', () => {
       .and('contain', 'Phone must start with +1'); // from your JS
 
     cy.get('#submitBtn').should('be.disabled');
-    cy.screenshot('error-state');
+    cy.screenshot('phone-validation-error');
   });
 
   it('re-disables submit button when a required field is cleared after enabling', () => {
