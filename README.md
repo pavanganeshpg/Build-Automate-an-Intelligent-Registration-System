@@ -1,4 +1,4 @@
-# Intelligent Registration System - Test Automation
+# Build-Automate-an-Intelligent-Registration-System
 
 Comprehensive automated testing solution for a User Registration Form built with **Cypress Framework**.
 
@@ -13,8 +13,8 @@ Comprehensive automated testing solution for a User Registration Form built with
 
 ```bash
 # Clone the repository
-git clone https://github.com/pavanganeshpg/Intelligent-Registration-System-automation.git
-cd Intelligent-Registration-System-automation
+git clone https://github.com/pavanganeshpg/Build-Automate-an-Intelligent-Registration-System.git
+cd Build-Automate-an-Intelligent-Registration-System
 
 # Install dependencies
 npm install
@@ -43,23 +43,26 @@ npx cypress run --spec "cypress/e2e/registration.cy.js" -k "Flow A"
 ## Project Structure
 
 ```
-Intelligent-Registration-System-automation/
-├── index.html                              # Registration form application
+Build-Automate-an-Intelligent-Registration-System/
 ├── cypress.config.js                       # Cypress configuration
 ├── package.json                            # Dependencies and npm scripts
 ├── README.md                               # Quick start guide
-├── SETUP_GUIDE.md                          # Detailed setup instructions
-├── CLONE_AND_RUN.md                        # Quick clone and run guide
-├── AUTOMATION_DOCUMENTATION.md             # Complete test documentation
-└── cypress/
-    ├── e2e/
-    │   └── registration.cy.js              # 4 test cases
-    ├── fixtures/
-    │   └── testData.json                   # Test data
-    ├── support/
-    │   └── e2e.js                          # Cypress support
-    ├── screenshots/                        # Test screenshots
-    └── videos/                             # Test recordings
+├── cypress/
+│   ├── Documentation/
+│   │   ├── AUTOMATION_DOCUMENTATION.md     # Complete test documentation
+│   │   ├── CLONE_AND_RUN.md                # Quick clone and run guide
+│   │   ├── README.md                       # Additional documentation
+│   │   └── SETUP_GUIDE.md                  # Detailed setup instructions
+│   ├── e2e/
+│   │   └── registration.cy.js              # 4 automated test cases
+│   ├── fixtures/
+│   │   └── testData.json                   # Test data
+│   ├── page/
+│   │   └── index.html                      # Registration form application
+│   ├── screenshots/                        # Test execution screenshots
+│   ├── support/
+│   │   └── e2e.js                          # Cypress support configuration
+│   └── videos/                             # Test recordings
 ```
 
 ## Test Results
@@ -127,7 +130,7 @@ After running tests, the following files are generated:
 ## Live Application
 
 View the registration form at:  
-https://pavanganeshpg.github.io/Intelligent-Registration-System-automation/
+https://pavanganeshpg.github.io/Build-Automate-an-Intelligent-Registration-System/
 
 ## System Requirements
 
@@ -171,7 +174,7 @@ For detailed information, see:
 
 **Pavan Ganesh**  
 GitHub: [@pavanganeshpg](https://github.com/pavanganeshpg)  
-Repository: [Intelligent-Registration-System-automation](https://github.com/pavanganeshpg/Intelligent-Registration-System-automation)
+Repository: [Build-Automate-an-Intelligent-Registration-System](https://github.com/pavanganeshpg/Build-Automate-an-Intelligent-Registration-System)
 
 ## License
 
@@ -221,18 +224,12 @@ All 4 tests are **PASSING** ✅
 
 ## 🛠️ Available npm Scripts
 
-```json
-{
-  "test:all":         "Run all tests",
-  "test:chrome":      "Run tests in Chrome",
-  "test:firefox":     "Run tests in Firefox",
-  "test:local":       "Run tests against local environment",
-  "test:dev":         "Run tests against dev environment",
-  "test:qa":          "Run tests against QA environment",
-  "test:prod":        "Run tests against production",
-  "test:registration": "Run registration tests only",
-  "test:report":      "Run tests and generate report"
-}
+```bash
+npm test              # Run all tests in headless mode
+npm run test:chrome   # Run tests in Chrome browser
+npm run test:firefox  # Run tests in Firefox browser
+npm run test:open     # Open Cypress interactive mode
+npm run test:report   # Run tests and generate HTML report
 ```
 
 ## 📝 Form Features
@@ -277,14 +274,14 @@ See: **[AUTOMATION_DOCUMENTATION.md](./AUTOMATION_DOCUMENTATION.md)**
 ## 🎬 Video & Screenshots
 
 Test execution artifacts are stored in:
-- **Screenshots:** `Cypress-Framework/cypress/screenshots/`
-- **Videos:** `Cypress-Framework/cypress/videos/`
-- **HTML Report:** `Cypress-Framework/cypress/results/cypress-mochawesome-reporter/index.html`
+- **Screenshots:** `cypress/screenshots/`
+- **Videos:** `cypress/videos/`
+- **HTML Report:** Generated after test run
 
 ## 🔗 Live Application
 
 View the registration form:
-https://pavanganeshpg.github.io/Intelligent-Registration-System-automation/
+https://pavanganeshpg.github.io/Build-Automate-an-Intelligent-Registration-System/
 
 ## 💻 System Requirements
 
@@ -309,7 +306,7 @@ The project includes:
 
 **Pavan Ganesh**
 - GitHub: [@pavanganeshpg](https://github.com/pavanganeshpg)
-- Repository: [Intelligent-Registration-System-automation](https://github.com/pavanganeshpg/Intelligent-Registration-System-automation)
+- Repository: [Build-Automate-an-Intelligent-Registration-System](https://github.com/pavanganeshpg/Build-Automate-an-Intelligent-Registration-System)
 
 ## 📄 License
 
@@ -333,8 +330,8 @@ This project is licensed under the ISC License - see LICENSE file for details.
 ## 📞 Support
 
 For issues or questions:
-1. Check [AUTOMATION_DOCUMENTATION.md](./AUTOMATION_DOCUMENTATION.md)
-2. Review test cases in `Cypress-Framework/cypress/e2e/registration.cy.js`
+1. Check [cypress/Documentation/AUTOMATION_DOCUMENTATION.md](./cypress/Documentation/AUTOMATION_DOCUMENTATION.md)
+2. Review test cases in `cypress/e2e/registration.cy.js`
 3. Check existing GitHub issues
 4. Create a new issue with detailed information
 
@@ -342,5 +339,5 @@ For issues or questions:
 
 **Last Updated:** November 19, 2025
 **Status:** ✅ Production Ready
-**Framework:** Cypress 13.0.0
+**Framework:** Cypress 14.5.4
 **Node Version:** v14+ required
