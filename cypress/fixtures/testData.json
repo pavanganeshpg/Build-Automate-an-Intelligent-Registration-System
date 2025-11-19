@@ -1,0 +1,43 @@
+{
+  "flowA": {
+    "firstName": "John",
+    "email": "john@example.com",
+    "phone": "+1 (555) 123-4567",
+    "country": "US",
+    "state": "CA",
+    "city": "San Francisco",
+    "password": "SecurePass123!",
+    "confirmPassword": "SecurePass123!",
+    "errorField": "#lastNameError",
+    "expectedError": "Last Name is required"
+  },
+  "flowB": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane.doe@example.com",
+    "phone": "+1 (555) 987-6543",
+    "country": "US",
+    "state": "NY",
+    "city": "New York",
+    "password": "StrongPassword456!",
+    "confirmPassword": "StrongPassword456!",
+    "expectedSuccess": "Registration successful"
+  },
+  "flowC": {
+    "country": "FR",
+    "state": "IDF",
+    "city": "Paris",
+    "passwordWeak": "weak",
+    "passwordStrong": "StrongPass123!",
+    "passwordMismatch": "DifferentPass123!",
+    "firstName": "Pierre",
+    "lastName": "Martin",
+    "email": "pierre@example.com",
+    "phone": "+33 1 23 45 67 89"
+  },
+  "flowD": {
+    "country": "US",
+    "phone": "+91 98765 43210",
+    "expectedError": "Phone number does not match the selected country"
+  }
+}
